@@ -13,7 +13,8 @@ class Packet:
 	def to_string(self):
 		print('#------------------------#')
 		print(f'PACKET: {self.pckcode}')
-		print(f'TOTALLENGTH: {config.IPHEADERSIZE} + {self.payloadsize}')
+		print(f'TOTALLENGTH: {config.IPHEADERSIZE + self.payloadsize}')
+		print(f'PAYLOAD: {self.payloadsize}')
 		print(f'FRAGOFFSET: {self.fragoffset}')
 		print(f'MOREFRAGS: {self.morefrags}')
 		print('#------------------------#')

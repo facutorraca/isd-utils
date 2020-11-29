@@ -82,9 +82,15 @@ def main():
 		
 		print(f'{HEADER}{BOLD}Link: {k + 1}{ENDC}')
 
+		sumpayloads = 0
 		for packet in packets:
 			packet.to_string()
+			sumpayloads += packet.payloadsize
 			print('')
+
+		print(f'{OKGREEN}{BOLD}Sum payload: {sumpayloads}{ENDC}')
+		print('')
+
 #----------------------------------------------------#
 
 main()

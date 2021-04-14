@@ -14,7 +14,7 @@ utilizando LPM (longest prefix match)
  ```
 
 * Ejecucion: python3 ./subnetcalc 
-Se van introduciendo las ips y el el programa devolverá el puerto de salida
+
 
 ## pckfragcalc
 Calcula la tabla de fragmentacion de un paquete a lo largo de una conexion
